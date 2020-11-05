@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: sample001 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample001
+  template:
+    metadata:
+      labels:
+        app: sample001 
+    spec:
+      containers:
+        - name: sample001 
+          image: acrsamplerepotrial.azurecr.io/sample001
+          ports:
+          - containerPort: 80
