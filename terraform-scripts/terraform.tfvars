@@ -2,7 +2,7 @@
 # common variables #
 ####################
 environment = "dev"
-location    = "northeurope"
+location    = "eastus"
 
 ##################
 # Authentication #

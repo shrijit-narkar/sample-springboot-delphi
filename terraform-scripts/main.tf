@@ -3,10 +3,10 @@
 ##################
 
 # Create a resource group for security
-resource "azurerm_resource_group" "security-rg" {
-  name     = "security-${var.environment}-rg"
-  location = var.location
-}
+#resource "azurerm_resource_group" "security-rg" {
+#  name     = "security-${var.environment}-rg"
+#  location = var.location
+#}
 
 #############
 # key vault #
