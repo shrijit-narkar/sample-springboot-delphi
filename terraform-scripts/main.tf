@@ -3,10 +3,10 @@
 ##################
 
 # Create a resource group for security
-resource "azurerm_resource_group" "security-rg" {
-  name     = "security-${var.environment}-rg"
-  location = var.location
-}
+#resource "azurerm_resource_group" "security-rg" {
+#  name     = "security-${var.environment}-rg"
+#  location = var.location
+#}
 
 #############
 # key vault #
@@ -16,7 +16,7 @@ module "keyvault" {
   source              = "./modules/keyvault"
   name                = "${var.environment}-keyvault"
   location            = var.location
-  resource_group_name = azurerm_resource_group.security-rg.name
+  resource_group_name = var.resource-group
   
   enabled_for_deployment          = var.kv-vm-deployment
   enabled_for_disk_encryption     = var.kv-disk-encryption

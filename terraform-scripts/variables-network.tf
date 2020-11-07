@@ -16,7 +16,7 @@ variable "location" {
 }
 
 # azure resource group
-variable "ressource-group" {
+variable "resource-group" {
   type        = string
   description = "Azure resource group"
   default     = "RG-TRIAL"
