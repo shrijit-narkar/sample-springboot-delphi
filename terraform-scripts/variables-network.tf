@@ -14,3 +14,10 @@ variable "location" {
   description = "Azure region where the resource group will be created"
   default     = "eastus"
 }
+
+# azure resource group
+variable "ressource-group" {
+  type        = string
+  description = "Azure resource group"
+  default     = "RG-TRIAL"
+}
