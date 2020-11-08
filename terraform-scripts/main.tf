@@ -14,7 +14,7 @@
 
 module "keyvault" {
   source              = "./modules/keyvault"
-  name                = "${var.environment}-keyvault"
+  name                = "trial-keyvault"
   location            = var.location
   resource_group_name = var.resource-group
   
