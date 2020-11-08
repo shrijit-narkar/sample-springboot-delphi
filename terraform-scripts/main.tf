@@ -14,7 +14,7 @@
 
 module "keyvault" {
   source              = "./modules/keyvault"
-  name                = "trial-keyvault"
+  name                = "akv-trial-shrijit-narkar"
   location            = var.location
   resource_group_name = var.resource-group
   
